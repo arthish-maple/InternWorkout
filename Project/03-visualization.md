@@ -1,10 +1,9 @@
 <html>
   <head>
-    <h2>Visualization</h2>
+    <h1>Visualization</h1>
   </head>
   <body>
-    
-    
+<div>
       <div>
         <h3>Categorical variable Distribution</h3>
         <ul>
@@ -18,6 +17,6 @@
                   <li>Heatmaps are used to show relationships between two variables, one plotted on each axis. By observing how cell colors change across each axis, you can observe if there are any patterns in value for one or both variables</li>
         </ul>
       </div>
-  
+    </div>
   </body>
 </html>
