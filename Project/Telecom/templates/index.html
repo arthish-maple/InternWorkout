@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+    <div class="container">
+    <h1>Customer Churn Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="tenure">Tenure:</label>
+        <input type="text" id="tenure" name="tenure" required><br>
+
+        <label for="paperlessbilling">Paperless Billing:</label>
+        <select id="paperlessbilling" name="paperlessbilling">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="monthlycharges">Monthly Charges:</label>
+        <input type="text" id="monthlycharges" name="monthlycharges" required><br>
+
+        <label for="seniorcitizen">Senior Citizen:</label>
+        <select id="seniorcitizen" name="seniorcitizen">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="partner">Partner:</label>
+        <select id="partner" name="partner">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="dependents">Dependents:</label>
+        <select id="dependents" name="dependents">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="multiplelines">Multiple Lines:</label>
+        <select id="multiplelines" name="multiplelines">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="onlinesecurity">Online Security:</label>
+        <select id="onlinesecurity" name="onlinesecurity">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="onlinebackup">Online Backup:</label>
+        <select id="onlinebackup" name="onlinebackup">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="deviceprotection">Device Protection:</label>
+        <select id="deviceprotection" name="deviceprotection">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="techsupport">Tech Support:</label>
+        <select id="techsupport" name="techsupport">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="streamingmovies">Streaming Movies:</label>
+        <select id="streamingmovies" name="streamingmovies">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="Contract_One year">Contract One Year:</label>
+        <select id="Contract_One year" name="Contract_One year">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="Contract_Two year">Contract Two Year:</label>
+        <select id="Contract_Two year" name="Contract_Two year">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <label for="paymentmethod_electronic">Payment Method Electronic:</label>
+        <select id="paymentmethod_electronic" name="paymentmethod_electronic">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <div class = "contact-right">
+        <img src = " " alt = "">
+    </div>
+
+
+    </div>
+</body>
+</html>
